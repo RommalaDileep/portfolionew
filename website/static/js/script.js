@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             threshold: 0.5,
         };
     
-        // ✅ Define skillsObserver BEFORE using it
+       
         const skillsObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         }, observerOptions);
     
-        // ✅ Make sure skillsSection exists before observing
+       
         if (skillsSection) {
             skillsObserver.observe(skillsSection);
         }
