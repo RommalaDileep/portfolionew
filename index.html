@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <nav class='navbar'>
+        <div class="logo" data-aos="fade-right">ROMMALA Dileep</div>
+        <ul class="nav-links" data-aos="fade-left" data-aos-delay="500">
+            <li><a href="#" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i>About</a></li>
+            <li><a href="./Dileep Resume.doc" download><i class="fa-solid fa-file-alt"></i>resume</a></li> 
+            <li><a href="#services"><i class="fa-solid fa-cogs"></i>Service</a></li> 
+            <li><a href="#skills"><i class="fa-solid fa-chart-bar"></i>Skills</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-project-diagram"></i>project</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a></li> 
+        </ul>
+        <div class="humburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="container" id="about">
+        <div class="content" data-aos="fade-right" data-aos-delay="1000">
+            <h3>HELLO!</h3>
+            <h1>I'm <span class="highlight">Dileep</span></h1>
+            <h1><span class="highlight">Rommala</span></h1>
+            <h2>A Freelance Web Developer</h2>
+            <div class="button">
+                <a href="#contact" class="btn primary">HIRE ME</a>
+                <a href="#projects" class="btn secondary">My Work</a>
+            </div>
+            <div class="slider-dot">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="image-container" data-aos="fade-left" data-aos-delay="1500">
+            <img src="{% static 'images/Name.png'%}" alt="Dileep">
+        </div>
+    </div>
+    <section class="skills-section" id="skills">
+        <h2 class="skills-title">My Skills</h2>
+        <p class="skills-subtitle">I have developed a strong foundation in web development and programming through hands-on experience and continuous learning. My skill set includes proficiency in front-end technologies like HTML, CSS, and JavaScript, as well as back-end development using Python, Django, and SQL. I'm passionate about creating responsive and user-friendly web applications while maintaining clean and efficient code.</p>
+        <div class="skills-container">
+            <div class="skill">
+                <span class="skill-name">HTML</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="90"></div>
+                </div>
+                <span class="skill-percent"><span class="percent-number">0</span>%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">CSS</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="80"></div>
+                </div>
+                <span class="skill-percent"><span class="percent-number">0</span>%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">JAVASCRIPT</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="70"></div>
+                </div>
+                <span class="skill-percent"><span class="percent-number">0</span>%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">PYTHON</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="80"></div>
+                </div>
+                <span class="skill-percent"><span class="percent-number">0</span>%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">DJANGO</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="70"></div>
+                </div>
+                <span class="skill-percent"><span class="percent-number">0</span>%</span>
+            </div>
+            <div class="skill">
+                <span class="skill-name">SQL</span>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percent="80"></div>
+                </div>
+                <span class="skill-percent"><span class="percent-number">0</span>%</span>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services" data-aos="zoom-in" data-aos-delay="450">
+        <h2 class="service-title">Service</h2>
+        <p class="service-subtitle">I offer comprehensive web and mobile development services, focusing on creating modern, responsive, and user-friendly digital solutions. From crafting elegant web designs to developing robust applications, I bring ideas to life with clean code and attention to detail.</p>
+        <div class="service-container">
+            <div class="service-item">
+                <i class="service-icon fas fa-search"></i>
+                <h3 class="service-name">WEB DESIGN</h3>
+            </div>
+            <div class="service-item">
+                <i class="service-icon fas fa-flask"></i>
+                <h3 class="service-name">APP DEVELOPER</h3>
+            </div>
+            <div class="service-item">
+                <i class="service-icon fas fa-lightbulb"></i>
+                <h3 class="service-name">WEB DEVLOPER</h3>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects" data-aos="fade-up">
+        <h2 class="project-title">Projects</h2>
+        <p class="project-subtitle">Here are some of my recent projects that showcase my skills and expertise in web development and design.</p>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="{% static 'images/ECOMMERCE.webp' %}" alt="Ecommerce Website" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-heading">ECOMMERCE WEBSITE</h3>
+                    <p class="project-description">A full-featured ecommerce platform built with HTML and CSS. Includes responsive product catalog, shopping cart interface, and checkout flow. Implements modern UI/UX principles with clean layouts and smooth animations for an optimal shopping experience.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="{% static 'images/GAME.webp'%}" alt="Python Snake Game" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-heading">PYTHON SNAKE GAME</h3>
+                    <p class="project-description">A classic Snake game implemented in Python using Pygame. Features include score tracking, increasing difficulty levels, sound effects, and high score system. Demonstrates strong programming fundamentals and game development concepts.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pygame</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="{% static 'images/BLOG.webp'%}" alt="Django Blog" class="project-img">
+                <div class="project-content">
+                    <h3 class="project-heading">DJANGO BLOG</h3>
+                    <p class="project-description">A feature-rich blogging platform built with Django. Includes user authentication, post creation/editing, comments system, categories, and search functionality. Implements SEO best practices and responsive design for optimal user experience.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JAVA SCRIPT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <h1>Contact</h1>
+        <div class="contact-info">
+            <div class="info-item">
+                <div class="icon-circle">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3>ADDRESS</h3>
+                <p>BANGALORE KARNATAKA</p>
+            </div>
+            <div class="info-item">
+                <div class="icon-circle">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>PHONE</h3>
+                <p>+916309616248</p>
+            </div>
+            <div class="info-item">
+                <div class="icon-circle">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <h3>Email Address</h3>
+                <p>rommaladileep@gmail.com</p>
+            </div>
+        </div>
+        <div class="contact-form-container">
+            <div class="image-container">
+            <img src="{% static 'images/Name.png'%}" alt="Dileep">
+            </div>
+             {% comment %} <form action="" class="contact-form">
+               
+               
+               
+               
+
+
+                <h2 class="contact-form-title">Contact Form</h2>
+                <input type="text" placeholder="Your name" required>
+                <input type="email" placeholder="email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">SEND MESSAGE</button>
+            </form>  {% endcomment %}
+            
+            
+            <form method="post" class="contact-form">
+                <h2 class="contact-form-title">Contact Form</h2>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">SEND MESSAGE</button>
+            </form>
+        </div>
+    </section> 
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>About</h3>
+                <p>I am a passionate web developer and designer with expertise in creating modern, responsive websites and applications. With a strong foundation in both front-end and back-end technologies, I strive to deliver high-quality solutions that exceed client expectations.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#home"><span>→</span>Home</a></li>
+                    <li><a href="#about"><span>→</span>About</a></li>
+                    <li><a href="#services"><span>→</span>Service</a></li>
+                    <li><a href="#projects"><span>→</span>Projects</a></li>
+                    <li><a href="#contact"><span>→</span>Contacts</a></li>
+                </ul>           
+            </div>
+            <div class="footer-col">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="#"></a><span>→</span>Web DESIGN</li>
+                    <li><a href="#"></a><span>→</span>Web DEVELOPMENT</li>
+                    <li><a href="#"></a><span>→</span>App DEVELOPER</li>
+                </ul>           
+            </div>
+            <div class="footer-col">
+                <h3>Have a Question?</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marked-alt"></i>BANGALORE KARNATAKA</li>
+                    <li><i class="fas fa-phone"></i>+916309616248</li>
+                    <li><i class="fas fa-envelope"></i><a class="mail" href="mailto:rommaladileep@gmail.com">rommaladileep@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+<script src="{% static 'js/script.js' %}"></script>
+<!-- Show Django Messages as Alert -->
+<!-- Other Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();  // ✅ Ensure animations still work
+</script>
+    <script>
+        {% if messages %}
+            {% for message in messages %}
+                alert("{{ message }}");  // ✅ Show alert popup only after DOM is ready
+            {% endfor %}
+    </script>
+{% endif %} 
+</body>
+</html>
